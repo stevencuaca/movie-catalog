@@ -8,7 +8,7 @@ const Movies = () => {
     const API_KEY = '89604591'
 
     useEffect(() => {
-        axios.get(`http://www.omdbapi.com/?apikey=${API_KEY
+        axios.get(`https://www.omdbapi.com/?apikey=${API_KEY
         }&s=${search ? search : 'superman'}`)
         .then(res => {
             const fetchMovies = res.data.Search
